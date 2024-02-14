@@ -55,7 +55,7 @@ function Products(props) {
     try {
       const token = localStorage.getItem("token");
   
-      await axios.delete(`https://nykka-backend.onrender.com/api/products/${productId}`, {
+      await axios.delete(`https://nykka-api.onrender.com/api/products/${productId}`, {
         headers: {
           Authorization: `${token}`,
         },

@@ -20,7 +20,7 @@ function SignupForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://nykka-backend.onrender.com/api/users/register', formData);
+      const response = await axios.post('https://nykka-api.onrender.com/api/users/register', formData);
       alert('Response: User registered successfully:')
       navigate('/');
       setFormData({

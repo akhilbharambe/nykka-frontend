@@ -25,7 +25,7 @@ function ProductForm({ onClose , onProductAdded }) {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "https://nykka-backend.onrender.com/api/products",
+        "https://nykka-api.onrender.com/api/products",
         formData,
         {
           headers: {
