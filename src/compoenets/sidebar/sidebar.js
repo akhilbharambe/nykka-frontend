@@ -1,20 +1,18 @@
 import * as React from "react";
-import { useNavigate } from "react-router-dom"; ; // Import useHistory hook from react-router-dom
+import { useNavigate } from "react-router-dom"; ; 
 
 function SideBar(props) {
-  const navigate = useNavigate(); // Initialize history object
+  const navigate = useNavigate(); 
 
   const handleLogout = () => {
-    // Handle logout action
-    // Redirect to the login page
-    navigate("/login");
+    navigate("/");
   };
 
   return (
     <>
       <div className="div">
-        {/* Sidebar content */}
-        <div className="div-2" > {/* Add onClick event handler */}
+       
+        <div className="div-2" >
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/6c5b697cff3442e0b525c0ff20165bdca0ff172b0ac2c76b77898c746df34b6e?"
