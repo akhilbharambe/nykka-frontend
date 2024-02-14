@@ -15,7 +15,7 @@ function Products(props) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://nykka-backend.onrender.com/api/products");
+        const response = await axios.get("https://nykka-api.onrender.com/api/products");
         setProducts(response.data);
         setFilteredProducts(response.data); 
       } catch (error) {
